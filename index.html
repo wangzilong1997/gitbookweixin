@@ -1,0 +1,285 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>微信后台开发第一步 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter active" data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    微信后台开发第一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >微信后台开发第一步</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="nodejsexpress&#x63A5;&#x5165;&#x5FAE;&#x4FE1;&#x540E;&#x53F0;&#x7684;&#x8BE6;&#x7EC6;&#x6559;&#x7A0B;"><font color="#556344"> nodeJS+express&#x63A5;&#x5165;&#x5FAE;&#x4FE1;&#x540E;&#x53F0;&#x7684;&#x8BE6;&#x7EC6;&#x6559;&#x7A0B;<font></font></font></h2>
+<h4 id="&#x524D;&#x671F;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;">&#x524D;&#x671F;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h4>
+<pre><code>  1:&#x9ED8;&#x8BA4;&#x4F60;&#x53C8;&#x4E00;&#x4E2A;&#x670D;&#x52A1;&#x5668;
+  2:nodejs
+  3:&#x4E00;&#x4E2A;&#x6CE8;&#x518C;&#x53F7;&#x7684;&#x516C;&#x4F17;&#x53F7;
+</code></pre><h4 id="nodejs&#x914D;&#x7F6E;&#x53CA;&#x4F7F;&#x7528;">nodejs&#x914D;&#x7F6E;&#x53CA;&#x4F7F;&#x7528;</h4>
+<pre><code>  1:node -v&#x67E5;&#x770B;node&#x7248;&#x672C;
+  2:npm install -g express-generator &#x5168;&#x5C40;&#x5B89;&#x88C5;express
+  3:express projectName &#x521B;&#x5EFA;express&#x9879;&#x76EE;
+  4:&#x8FDB;&#x5165;&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#x5939; npm install &#x5B89;&#x88C5;&#x4F9D;&#x8D56;
+  5:&#x7528;./www&#x7684;&#x65B9;&#x5F0F;&#x542F;&#x52A8;&#x9879;&#x76EE;
+  &#x8BBF;&#x95EE;&#x8BE5;ip&#x7684;3000&#x7AEF;&#x53E3; &#x67E5;&#x770B;&#x7F51;&#x9875;&#x662F;&#x5426;&#x663E;&#x793A;
+</code></pre><h4 id="&#x516C;&#x4F17;&#x53F7;&#x7684;&#x63A5;&#x5165;&#x914D;&#x7F6E;">&#x516C;&#x4F17;&#x53F7;&#x7684;&#x63A5;&#x5165;&#x914D;&#x7F6E;</h4>
+<h5 id="&#x6253;&#x5F00;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x5E73;&#x53F0;"><font color="#556344"> &#x6253;&#x5F00;&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x53F7;&#x5E73;&#x53F0;<font></font></font></h5>
+<h5 id="&#x9996;&#x9875;&#x5F00;&#x53D1;&#x8FDB;&#x5165;&#x57FA;&#x672C;&#x914D;&#x7F6E;"><font color="#556344">&#x9996;&#x9875;&#x5F00;&#x53D1;&#x8FDB;&#x5165;&#x57FA;&#x672C;&#x914D;&#x7F6E;<font></font></font></h5>
+<p><img src="https://images2015.cnblogs.com/blog/687168/201511/687168-20151117134720640-1536864077.png" alt="&#x63A5;&#x53E3;&#x914D;&#x7F6E;"></p>
+<p>URL:&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x6620;&#x5C04;&#x597D;&#x7684;&#x5916;&#x7F51;&#x5730;&#x5740;&#xFF1B;</p>
+<p>token:&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x548C;&#x5FAE;&#x4FE1;&#x540E;&#x53F0;&#x7EA6;&#x5B9A;&#x597D;&#x7684;&#x4EE4;&#x724C;&#xFF1B;</p>
+<p>&#x79D8;&#x94A5;&#xFF1A;&#x968F;&#x673A;&#x751F;&#x6210;&#xFF1B;</p>
+<p>&#x52A0;&#x5BC6;&#x65B9;&#x5F0F;&#xFF1A;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x660E;&#x6587;&#x6A21;&#x5F0F;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x517C;&#x5BB9;&#x6A21;&#x5F0F;
+&#xFF1B;</p>
+<h5 id="&#x6CE8;&#x610F;&#xFF1A;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x8FD8;&#x4E0D;&#x80FD;&#x63D0;&#x4EA4;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x9A8C;&#x8BC1;&#x4EE3;&#x7801;&#x7684;&#x7F16;&#x5199;&#xFF1B;&#x8FD9;&#x662F;&#x9A8C;&#x8BC1;&#x8981;&#x6C42;&#xFF1B;"><font color="#556344"> &#x6CE8;&#x610F;&#xFF1A;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x8FD8;&#x4E0D;&#x80FD;&#x63D0;&#x4EA4;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x9A8C;&#x8BC1;&#x4EE3;&#x7801;&#x7684;&#x7F16;&#x5199;&#xFF1B;&#x8FD9;&#x662F;&#x9A8C;&#x8BC1;&#x8981;&#x6C42;&#xFF1B;<font></font></font></h5>
+<h5 id="&#x9996;&#x5148;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x7528;&#x5230;&#x4E86;npm&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5305;&#xFF1B;&#x8F93;&#x5165;&#x547D;&#x4EE4;"><font color="#556344"> &#x9996;&#x5148;&#x6211;&#x4EEC;&#x8FD9;&#x91CC;&#x7528;&#x5230;&#x4E86;NPM&#x7684;&#x53E6;&#x4E00;&#x4E2A;&#x5305;&#xFF1B;&#x8F93;&#x5165;&#x547D;&#x4EE4;<font></font></font></h5>
+<p>&apos;npm install srypto&apos;
+<img src="https://images2015.cnblogs.com/blog/687168/201511/687168-20151117144959843-1386391179.png" alt="crypto"></p>
+<h5 id="&#x6253;&#x5F00;&#x7528;express&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FDB;&#x5165;routersindexjs"><font color="#556344"> &#x6253;&#x5F00;&#x7528;express&#x521B;&#x5EFA;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x8FDB;&#x5165;routers/index.js<font></font></font></h5>
+<h5 id="&#x5C06;&#x91CC;&#x9762;&#x4EE3;&#x7801;&#x6539;&#x4E3A;&#xFF1A;"><font color="#556344"> &#x5C06;&#x91CC;&#x9762;&#x4EE3;&#x7801;&#x6539;&#x4E3A;&#xFF1A;<font></font></font></h5>
+<pre><code>var express = require(&apos;express&apos;);
+var crypto = require(&apos;crypto&apos;);
+var router = express.Router();
+
+var token = &quot;&#x4F60;&#x81EA;&#x5DF1;&#x89C4;&#x5B9A;&#x7684;token&quot;; //&#x6B64;&#x5904;&#x9700;&#x8981;&#x4F60;&#x81EA;&#x5DF1;&#x4FEE;&#x6539;&#xFF01;
+
+/* GET home page. */
+router.get(&apos;/&apos;, function(req, res, next) {
+
+var signature = req.query.signature;
+var timestamp = req.query.timestamp;
+var nonce = req.query.nonce;
+var echostr = req.query.echostr;
+
+/*  &#x52A0;&#x5BC6;/&#x6821;&#x9A8C;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A; */
+//1. &#x5C06;token&#x3001;timestamp&#x3001;nonce&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x5B57;&#x5178;&#x5E8F;&#x6392;&#x5E8F;
+var array = new Array(token,timestamp,nonce);
+array.sort();
+var str = array.toString().replace(/,/g,&quot;&quot;);
+
+//2. &#x5C06;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#x5B57;&#x7B26;&#x4E32;&#x62FC;&#x63A5;&#x6210;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x4E32;&#x8FDB;&#x884C;sha1&#x52A0;&#x5BC6;
+var sha1Code = crypto.createHash(&quot;sha1&quot;);
+var code = sha1Code.update(str,&apos;utf-8&apos;).digest(&quot;hex&quot;);
+
+//3. &#x5F00;&#x53D1;&#x8005;&#x83B7;&#x5F97;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#x53EF;&#x4E0E;signature&#x5BF9;&#x6BD4;&#xFF0C;&#x6807;&#x8BC6;&#x8BE5;&#x8BF7;&#x6C42;&#x6765;&#x6E90;&#x4E8E;&#x5FAE;&#x4FE1;
+if(code===signature){
+res.send(echostr)
+}else{
+
+    res.send(&quot;error&quot;);
+                                                                            }
+});
+module.exports = router;
+</code></pre><h5 id="&#x4EE3;&#x7801;&#x5B8C;&#x6210;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7B49;&#x5F85;&#x5FAE;&#x4FE1;&#x9A8C;&#x8BC1;&#xFF1A;"><font color="#556344"> &#x4EE3;&#x7801;&#x5B8C;&#x6210;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x7B49;&#x5F85;&#x5FAE;&#x4FE1;&#x9A8C;&#x8BC1;&#xFF1A;<font></font></font></h5>
+<p><img src="https://images2015.cnblogs.com/blog/687168/201511/687168-20151117145412218-1330562428.png" alt="gg"></p>
+<h5 id="&#x586B;&#x597D;&#x5FAE;&#x4FE1;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;"><font color="#556344"> &#x586B;&#x597D;&#x5FAE;&#x4FE1;&#x914D;&#x7F6E;&#x8FDB;&#x884C;&#x63D0;&#x4EA4;<font></font></font></h5>
+<h3 id="&#x5982;&#x679C;&#x63D0;&#x793A;token&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x662F;&#x4EE3;&#x7801;&#x95EE;&#x9898;&#xFF0C;&#x67E5;&#x770B;&#x4EE3;&#x7801;&#x54EA;&#x91CC;&#x6709;&#x9519;&#x8BEF;&#xFF01;&#xFF01;">&#x5982;&#x679C;&#x63D0;&#x793A;token&#x9A8C;&#x8BC1;&#x5931;&#x8D25;&#xFF0C;&#x5219;&#x662F;&#x4EE3;&#x7801;&#x95EE;&#x9898;&#xFF0C;&#x67E5;&#x770B;&#x4EE3;&#x7801;&#x54EA;&#x91CC;&#x6709;&#x9519;&#x8BEF;&#xFF01;&#xFF01;</h3>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"微信后台开发第一步","level":"1.1","depth":1,"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"README.md","mtime":"2019-03-07T06:18:31.078Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-14T13:25:56.063Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
