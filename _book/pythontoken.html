@@ -1,0 +1,322 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>python基本开发配置 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="./" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    微信后台开发第一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2" data-path="pythontoken.html">
+            
+                <a href="pythontoken.html">
+            
+                    
+                    python基本开发配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >python基本开发配置</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x6280;&#x672F;&#x5E73;&#x53F0;&#x5F00;&#x53D1;&#x8005;&#x914D;&#x7F6E;&#x4E2D;python&#x7248;&#x672C;&#x95EE;&#x9898;"><font color="533455">&#x5FAE;&#x4FE1;&#x516C;&#x4F17;&#x6280;&#x672F;&#x5E73;&#x53F0;&#x5F00;&#x53D1;&#x8005;&#x914D;&#x7F6E;&#x4E2D;python&#x7248;&#x672C;&#x95EE;&#x9898;</font></h1>
+<h3 id="&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x662F;python&#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x8BED;&#x8A00;"><font color="553333">&#x5F00;&#x53D1;&#x8005;&#x6587;&#x6863;&#x4E2D;&#x9009;&#x62E9;&#x7684;&#x662F;python&#x4F5C;&#x4E3A;&#x5F00;&#x53D1;&#x8BED;&#x8A00;<font></font></font></h3>
+<h3 id="&#x4E0D;&#x8FC7;&#x662F;python2&#x7136;&#x800C;&#x6211;&#x8FD9;&#x4E2A;&#x5E74;&#x4EE3;python&#x9A6C;&#x4E0A;&#x4E0D;&#x4F1A;&#x7EF4;&#x62A4;pip&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;"><font color="51111">&#x4E0D;&#x8FC7;&#x662F;python2(&#x7136;&#x800C;&#x6211;&#x8FD9;&#x4E2A;&#x5E74;&#x4EE3;python&#x9A6C;&#x4E0A;&#x4E0D;&#x4F1A;&#x7EF4;&#x62A4;pip&#x5DF2;&#x7ECF;&#x65E0;&#x6CD5;&#x4F7F;&#x7528;)<font></font></font></h3>
+<h3 id="&#x8DDF;&#x7740;&#x6587;&#x6863;&#x8D70;&#x7684;&#x6211;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x5728;&#x8FD9;&#x91CC;&#x8BB0;&#x5F55;"><font color="41111">&#x8DDF;&#x7740;&#x6587;&#x6863;&#x8D70;&#x7684;&#x6211;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x5728;&#x8FD9;&#x91CC;&#x8BB0;&#x5F55;<font></font></font></h3>
+<h4 id="&#x8FD9;&#x91CC;&#x662F;&#x5B83;&#x7ED9;&#x7684;&#x5F00;&#x53D1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE3;&#x7801;"><font color="31111">&#x8FD9;&#x91CC;&#x662F;&#x5B83;&#x7ED9;&#x7684;&#x5F00;&#x53D1;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x4EE3;&#x7801;<font></font></font></h4>
+<pre><code># -*- coding: utf-8 -*-
+# filename: handle.py
+
+import hashlib
+import web
+
+class Handle(object):
+        def GET(self):
+            try:
+                data = web.input()
+
+                if len(data) == 0:
+                    return &quot;hello, this is handle view&quot;
+                signature = data.signature
+                timestamp = data.timestamp
+                nonce = data.nonce
+                echostr = data.echostr
+                token = &quot;xxxx&quot; #&#x8BF7;&#x6309;&#x7167;&#x516C;&#x4F17;&#x5E73;&#x53F0;&#x5B98;&#x7F51;\&#x57FA;&#x672C;&#x914D;&#x7F6E;&#x4E2D;&#x4FE1;&#x606F;&#x586B;&#x5199;
+
+                list = [token, timestamp, nonce]
+                list.sort()
+                sha1 = hashlib.sha1()
+                map(sha1.update, list)
+                hashcode = sha1.hexdigest()
+                print &quot;handle/GET func: hashcode, signature: &quot;, hashcode, signature
+                if hashcode == signature:
+                    return echostr
+                else:
+                    return &quot;&quot;
+            except Exception, Argument:
+                return Argument
+</code></pre><h4 id="&#x5230;&#x5904;&#x6309;print&#x9664;&#x4E86;&#x57FA;&#x672C;&#x7684;2-3&#x7248;&#x672C;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;&#x5176;&#x4ED6;&#x6211;&#x90FD;&#x4E0D;&#x77E5;&#x9053;"><font color="21111">&#x5230;&#x5904;&#x6309;print&#x9664;&#x4E86;&#x57FA;&#x672C;&#x7684;2-3&#x7248;&#x672C;&#x4E4B;&#x95F4;&#x7684;&#x533A;&#x522B;&#x5176;&#x4ED6;&#x6211;&#x90FD;&#x4E0D;&#x77E5;&#x9053;<font></font></font></h4>
+<h4 id="&#x4F60;&#x4F1A;&#x53D1;&#x73B0;-hashcode&#x4E0D;&#x53EF;&#x80FD;&#x7B49;&#x4E8E;-signature&#x56E0;&#x4E3A;-hashcode&#x4E00;&#x76F4;&#x90FD;&#x662F;da39a3ee5e6b4b0d3255bfef95601890afd80709"><font color="21111">&#x4F60;&#x4F1A;&#x53D1;&#x73B0; hashcode&#x4E0D;&#x53EF;&#x80FD;&#x7B49;&#x4E8E; signature&#x56E0;&#x4E3A; hashcode&#x4E00;&#x76F4;&#x90FD;&#x662F;da39a3ee5e6b4b0d3255bfef95601890afd80709<font></font></font></h4>
+<h4 id="&#x6700;&#x7EC8;&#x5B9A;&#x4F4D;&#x5230;mapsha1updatelist"><font color="21111">&#x6700;&#x7EC8;&#x5B9A;&#x4F4D;&#x5230;map(sha1.update,list)<font></font></font></h4>
+<h4 id="&#x4EE5;&#x6211;&#x7684;&#x77E5;&#x8BC6;&#x53EA;&#x662F;&#x5B9A;&#x4F4D;&#x5230;&#x4E86;&#x7F16;&#x7801;&#x548C;&#x7248;&#x672C;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#xFF0C;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x95EE;&#x9898;&#x6211;&#x8FD8;&#x662F;&#x4E0D;&#x592A;&#x6E05;&#x695A;&#x7559;&#x5751;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;"><font color="21111">&#x4EE5;&#x6211;&#x7684;&#x77E5;&#x8BC6;&#x53EA;&#x662F;&#x5B9A;&#x4F4D;&#x5230;&#x4E86;&#x7F16;&#x7801;&#x548C;&#x7248;&#x672C;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#xFF0C;&#xFF0C;&#x5177;&#x4F53;&#x7684;&#x95EE;&#x9898;&#x6211;&#x8FD8;&#x662F;&#x4E0D;&#x592A;&#x6E05;&#x695A;&#x7559;&#x5751;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;&#x3002;<font></font></font></h4>
+<h4 id="&#x6211;&#x67E5;&#x627E;&#x7684;&#x4E24;&#x4E2A;&#x94FE;&#x63A5;1"><a href="http://group.jobbole.com/25411/" target="_blank">&#x6211;&#x67E5;&#x627E;&#x7684;&#x4E24;&#x4E2A;&#x94FE;&#x63A5;1</a></h4>
+<h4 id="&#x6211;&#x67E5;&#x627E;&#x7684;&#x4E24;&#x4E2A;&#x94FE;&#x63A5;2"><a href="https://www.2cto.com/kf/201801/711368.html" target="_blank">&#x6211;&#x67E5;&#x627E;&#x7684;&#x4E24;&#x4E2A;&#x94FE;&#x63A5;2</a></h4>
+<h4 id="&#x627E;&#x5230;&#x95EE;&#x9898;&#x5E76;&#x627E;&#x5230;&#x7B54;&#x6848;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x5305;&#x542B;&#x8FC7;&#x7A0B;&#x3002;&#x3002;&#x3002;&#xFF09;"><font color="31111">&#x627E;&#x5230;&#x95EE;&#x9898;&#x5E76;&#x627E;&#x5230;&#x7B54;&#x6848;&#x7684;&#x4EE3;&#x7801;&#xFF08;&#x5305;&#x542B;&#x8FC7;&#x7A0B;&#x3002;&#x3002;&#x3002;&#xFF09;<font></font></font></h4>
+<pre><code>import hashlib
+import web
+
+class  Handle(object):
+        def GET(self):
+            try:
+                data = web.input()
+
+                if len(data) == 0:
+                    return &quot;hello, this is handle view&quot;
+                signature = data.signature
+                print(signature)
+                timestamp = data.timestamp
+                print(timestamp)
+                nonce = data.nonce
+                print(nonce)
+                echostr = data.echostr
+                print(echostr)
+                token = &quot;mytoken&quot;
+
+                list = [token,timestamp,nonce]
+                print(list)
+                list.sort()
+                print(list)
+                list2 = &apos;&apos;.join(list)
+                sha1 = hashlib.sha1()
+                print(sha1)
+                sha1.update(list2.encode(&apos;utf-8&apos;))
+                print(sha1)
+                hashcode = sha1.hexdigest()
+                print(hashcode)
+                print(signature)
+                print (&quot;handle/GET func: hashcode, signature: &quot;, hashcode, signature)
+                if hashcode == signature:
+                    return echostr
+                else:
+                    return &quot;&quot;
+            except (Exception, Argument):
+                return Argument
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="./" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 微信后台开发第一步">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"python基本开发配置","level":"1.2","depth":1,"previous":{"title":"微信后台开发第一步","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"pythontoken.md","mtime":"2019-03-17T14:30:23.383Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-03-17T13:51:52.116Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
