@@ -1,7 +1,7 @@
-##<font color="#556344"> nodeJS+express接入微信后台的详细教程<font>
+## <font color="#556344"> nodeJS+express接入微信后台的详细教程<font>
 
 
-####前期准备工作
+#### 前期准备工作
 
 
 ```
@@ -9,7 +9,7 @@
   2:nodejs
   3:一个注册号的公众号
 ```
-####nodejs配置及使用
+#### nodejs配置及使用
  ```
   1:node -v查看node版本
   2:npm install -g express-generator 全局安装express
@@ -19,11 +19,11 @@
   访问该ip的3000端口 查看网页是否显示
  ``` 
 
-####公众号的接入配置
+#### 公众号的接入配置
 
-#####<font color="#556344"> 打开微信公众号平台<font>
+##### <font color="#556344"> 打开微信公众号平台<font>
 
-#####<font color="#556344">首页开发进入基本配置<font>
+##### <font color="#556344">首页开发进入基本配置<font>
 
 ![接口配置](https://images2015.cnblogs.com/blog/687168/201511/687168-20151117134720640-1536864077.png)
 
@@ -36,16 +36,16 @@ token:就是我们和微信后台约定好的令牌；
 加密方式：可以选择明文模式，也可以选择兼容模式
 ；
 
-#####<font color="#556344"> 注意：此时我们还不能提交，因为我们还没有验证代码的编写；这是验证要求；<font>
+##### <font color="#556344"> 注意：此时我们还不能提交，因为我们还没有验证代码的编写；这是验证要求；<font>
 
 
-#####<font color="#556344"> 首先我们这里用到了NPM的另一个包；输入命令<font>
+##### <font color="#556344"> 首先我们这里用到了NPM的另一个包；输入命令<font>
 'npm install srypto'
 ![crypto](https://images2015.cnblogs.com/blog/687168/201511/687168-20151117144959843-1386391179.png)
 
-#####<font color="#556344"> 打开用express创建的文件，进入routers/index.js<font>
+##### <font color="#556344"> 打开用express创建的文件，进入routers/index.js<font>
 
-#####<font color="#556344"> 将里面代码改为：<font>
+##### <font color="#556344"> 将里面代码改为：<font>
 ```
 var express = require('express');
 var crypto = require('crypto');
@@ -82,13 +82,13 @@ res.send(echostr)
 module.exports = router;
 ```
 
-#####<font color="#556344"> 代码完成可以运行等待微信验证：<font>
+##### <font color="#556344"> 代码完成可以运行等待微信验证：<font>
 
 ![gg](https://images2015.cnblogs.com/blog/687168/201511/687168-20151117145412218-1330562428.png)
 
 
-#####<font color="#556344"> 填好微信配置进行提交<font>
+##### <font color="#556344"> 填好微信配置进行提交<font>
 
 
 
-###如果提示token验证失败，则是代码问题，查看代码哪里有错误！！
+### 如果提示token验证失败，则是代码问题，查看代码哪里有错误！！
